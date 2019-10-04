@@ -17,7 +17,7 @@ public class Calculatrice {
 		this.valeurCourante = 10;
 	}
 	
-	//getters et setters
+	//Getters et setters
 	
 	
 	/**

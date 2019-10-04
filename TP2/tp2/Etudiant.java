@@ -2,7 +2,7 @@ package tp2;
 
 
 /**
- * Classe permettant la représentation d'un étudiant
+ * Classe permettant la repr�sentation d'un étudiant
  * @author Virginie Van den Schrieck
  */
 public class Etudiant {

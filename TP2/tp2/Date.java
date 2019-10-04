@@ -18,7 +18,7 @@ public class Date {
 	int annee;
 	
 	/**
-	 * La méthode main permet de tester la classe date en créant un objet 
+	 * La m�thode main permet de tester la classe date en créant un objet 
 	 * au départ des arguments de la ligne de commande.  Trois arguments sont attendus, sous forme d'entiers : 
 	 * Le jour, le mois et l'année.  
 	 * @param args les arguments de la ligne de commande
