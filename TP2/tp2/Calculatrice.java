@@ -6,7 +6,7 @@ package tp2;
  *
  */
 public class Calculatrice {
-	double valeurCourante; // Stocke la valeur affichée sur l'écran de la calculatrice
+	private double valeurCourante; // Stocke la valeur affichée sur l'écran de la calculatrice
 	
 	//CONSTRUCTEUR
 	public Calculatrice(double valeurCourante) {
@@ -18,7 +18,13 @@ public class Calculatrice {
 	}
 	
 	//Getters et setters
+	public double getValeurCourante() {
+	    return valeurCourante;
+	}
 	
+	public void setValeurCourante(double n) {
+	    this.valeurCourante = n;
+	}
 	
 	/**
 	 * Additionne un nombre à la valeur courante
@@ -48,6 +54,7 @@ public class Calculatrice {
 	public static void main(String[] args) {
 		Calculatrice myCalc;
 		
+		myCalc = new Calculatrice();
 		if(args.length == 0) {
 			myCalc = new Calculatrice();
 		} else {
@@ -57,9 +64,11 @@ public class Calculatrice {
 		System.out.println(myCalc.valeurCourante);
 		
 //		Calculatrice myCalc = new Calculatrice();
-//		myCalc.ajoute(5);
+		myCalc.ajoute(5);
 //		myCalc.soustrait(2);
 //		System.out.println(myCalc.valeurCourante);
+		
+		System.out.println(myCalc.valeurCourante);
 	}
 
 }
