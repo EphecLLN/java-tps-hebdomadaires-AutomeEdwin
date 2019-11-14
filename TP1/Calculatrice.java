@@ -23,6 +23,15 @@ public class Calculatrice {
 	void soustrait(double n) {
 		valeurCourante-=n;
 	}
+	
+	/**
+	 * Multiplie la valeur courante par un nombre
+	 * @param n le multiplicateur
+	 */
+	void multi(int n) {
+	    valeurCourante*=n;
+	}
+	
 	/**
 	 * Elève la valeur courante au carré
 	 */
@@ -38,6 +47,7 @@ public class Calculatrice {
 		Calculatrice myCalc = new Calculatrice();
 		myCalc.ajoute(5);
 		myCalc.soustrait(2);
+		myCalc.multi(3);
 		System.out.println(myCalc.valeurCourante);
 	}
 
