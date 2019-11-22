@@ -19,7 +19,7 @@ class CalculatriceTest {
     @Test
     void testCarre() {
 	Calculatrice calc = new Calculatrice();
-	assertEquals(0, calc.carre(0));
+	assertEquals(9, calc.carre(3));
     }
 
 }
