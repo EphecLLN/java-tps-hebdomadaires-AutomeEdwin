@@ -15,7 +15,7 @@ public class Calculatrice {
      * @return Un nombre >= 0, résultat de la multiplication de n par lui-même
      */
     public int carre(int n) {
-	return 0;
+	return n*n;
     }
     /**
      * @param args
