@@ -18,7 +18,8 @@ class CalculatriceTest {
      */
     @Test
     void testCarre() {
-	fail("Not yet implemented");
+	Calculatrice calc = new Calculatrice();
+	assertEquals(0, calc.carre(0));
     }
 
 }
