@@ -4,12 +4,9 @@ public class UtilisationCalculatrice {
     
     public static void main(String[] args) {
 	
-	Calculatrice myCalc;
+	Calculatrice myCalc = new Calculatrice();
 
-	myCalc = new Calculatrice();
-
-	myCalc.ajoute(5);
+	myCalc.ajoute(10);
 	System.out.println(myCalc.getValeurCourante());
-
     }
 }

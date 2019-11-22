@@ -26,6 +26,7 @@ public class Calculatrice {
 	    this.valeurCourante = n;
 	}
 	
+	//METHODE
 	/**
 	 * Additionne un nombre à la valeur courante
 	 * @param n le nombre à ajouter à la valeur courante de la calculatrice
@@ -48,27 +49,30 @@ public class Calculatrice {
 	}
 	
 	/**
+	 * Methode toString 
+	 * @return String donnant la valeur courante de la calculatrice
+	 */
+	public String toString() {
+	    return "La valeur courante de la calculatrice est " + this.valeurCourante;
+	}
+	
+	/**
 	 * Méthode main permettant de lancer un test rapide de la classe calculatrice.
 	 * @param args les arguments de la ligne de commande
 	 */
 	public static void main(String[] args) {
-		Calculatrice myCalc;
-		
-		myCalc = new Calculatrice();
-		if(args.length == 0) {
+		Calculatrice myCalc = new Calculatrice();
+		/*if(args.length == 0) {
 			myCalc = new Calculatrice();
 		} else {
 			myCalc = new Calculatrice(Integer.parseInt(args[0]));
 		}
 		
-		System.out.println(myCalc.valeurCourante);
+		System.out.println(myCalc.valeurCourante);*/
 		
-//		Calculatrice myCalc = new Calculatrice();
 		myCalc.ajoute(5);
-//		myCalc.soustrait(2);
-//		System.out.println(myCalc.valeurCourante);
-		
-		System.out.println(myCalc.valeurCourante);
+		myCalc.soustrait(2);
+		System.out.println(myCalc.toString());
 	}
 
 }
