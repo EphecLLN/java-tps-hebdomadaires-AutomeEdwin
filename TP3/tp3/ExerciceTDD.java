@@ -9,6 +9,10 @@ package tp3;
  */
 public class ExerciceTDD {
 
+    public boolean estPair() {
+	return false;
+    }
+
     /**
      * @param args
      */
