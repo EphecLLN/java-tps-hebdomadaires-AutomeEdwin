@@ -3,17 +3,38 @@
  */
 package tp3;
 
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
 /**
  * @author edwin
  *
  */
-public class ExerciceTDDTest {
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-	// TODO Auto-generated method stub
+class ExerciceTDDTest {
 
+    /**
+     * Test method for {@link tp3.ExerciceTDD#estPair()}.
+     */
+    @Test
+    void testEstPair() {
+	fail("Not yet implemented");
+    }
+
+    /**
+     * Test method for {@link tp3.ExerciceTDD#perimetreCarre()}.
+     */
+    @Test
+    void testPerimetreCarre() {
+	fail("Not yet implemented");
+    }
+
+    /**
+     * Test method for {@link tp3.ExerciceTDD#contientCaractere()}.
+     */
+    @Test
+    void testContientCaractere() {
+	fail("Not yet implemented");
     }
 
 }
