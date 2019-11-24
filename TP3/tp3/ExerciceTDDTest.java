@@ -18,7 +18,7 @@ class ExerciceTDDTest {
      */
     @Test
     void testEstPair() {
-	fail("Not yet implemented");
+	assertEquals(true, estPair(2));
     }
 
     /**
