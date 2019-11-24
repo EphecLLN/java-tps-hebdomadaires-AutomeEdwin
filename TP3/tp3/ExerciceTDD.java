@@ -13,6 +13,9 @@ public class ExerciceTDD {
 	return false;
     }
 
+    public double perimetreCarre() {
+	return 0;
+    }
     /**
      * @param args
      */

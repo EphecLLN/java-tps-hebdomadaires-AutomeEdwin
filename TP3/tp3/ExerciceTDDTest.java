@@ -8,7 +8,6 @@ package tp3;
  *
  */
 public class ExerciceTDDTest {
-
     /**
      * @param args
      */
