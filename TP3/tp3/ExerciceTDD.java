@@ -16,6 +16,10 @@ public class ExerciceTDD {
     public double perimetreCarre() {
 	return 0;
     }
+    
+    public boolean contientCaractere() {
+	return false;
+    }
     /**
      * @param args
      */
