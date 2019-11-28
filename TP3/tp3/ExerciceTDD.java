@@ -22,12 +22,22 @@ public class ExerciceTDD {
 	    return false;
 	}
     }
-
-    public double perimetreCarre() {
+    
+    /**
+     * Calcule le perimetre carré sur base d'un coté de longueur n
+     * @param n longueur d'un coté
+     * @return le perimetre carré
+     */
+    public double perimetreCarre(int n) {
 	return 0;
     }
 
-    public boolean contientCaractere() {
+    /**
+     * Analyse une String pour déterminer si elle contient un caractère
+     * @param str String à analyser
+     * @return true si le caractère c se trouve dans la string str
+     */
+    public boolean contientCaractere(char c, String str) {
 	return false;
     }
 
@@ -35,7 +45,7 @@ public class ExerciceTDD {
      * @param args
      */
     public static void main(String[] args) {
-	// TODO Auto-generated method stub
+	Nombre nb = new Nombre();
 
     }
 
