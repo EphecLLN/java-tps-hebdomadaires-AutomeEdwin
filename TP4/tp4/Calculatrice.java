@@ -9,6 +9,12 @@ public class Calculatrice {
 	
 	double valeurCourante; // Stocke la valeur affichée sur l'écran de la calculatrice
 	
+	
+	//METHODES
+	public boolean equals(Calculatrice obj) {
+	    return this.valeurCourante == obj.valeurCourante;
+	}
+	
 	/**
 	 * Additionne un nombre à la valeur courante
 	 * @param n le nombre à ajouter à la valeur courante de la calculatrice
@@ -46,9 +52,14 @@ public class Calculatrice {
 	 */
 	public static void main(String[] args) {
 		Calculatrice myCalc = new Calculatrice();
+		Calculatrice myCalc2 = new Calculatrice();
 		myCalc.ajoute(5);
+		myCalc2.ajoute(5);
 		myCalc.soustrait(2);
-		myCalc.multi(3);
+		myCalc2.soustrait(2);
+		if(myCalc.equals(myCalc2)) {
+		    
+		}
 		System.out.println(myCalc.valeurCourante);
 	}
 }
