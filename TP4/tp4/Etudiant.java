@@ -12,6 +12,16 @@ public class Etudiant {
 	int matricule;
 	//Cette variable d'instance est du type Date, disponible dans le même package
 	Date dateNaissance;
+	private static int nbEtudiants;
+	
+	//SETTERS & GETTERS
+	/**
+	 * 
+	 * @return le nombre d'étudiant
+	 */
+	public  int getNbEtudiants() {
+	    return nbEtudiants;
+	}
 	
 	/*
 	 * Méthode main qui crée un étudiant et initialise les variables d'instance au départ de la ligne de commande
@@ -27,5 +37,4 @@ public class Etudiant {
 		etu.dateNaissance.mois = Integer.parseInt(args[4]);
 		etu.dateNaissance.année = Integer.parseInt(args[5]);
 	}
-
 }
