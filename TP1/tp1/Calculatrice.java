@@ -7,7 +7,7 @@ package tp1;
  */
 public class Calculatrice {
 	
-	double valeurCourante; // Stocke la valeur affichée sur l'écran de la calculatrice
+	double valeurCourante = 0; // Stocke la valeur affichée sur l'écran de la calculatrice
 	
 	/**
 	 * Additionne un nombre à la valeur courante
@@ -23,15 +23,7 @@ public class Calculatrice {
 	void soustrait(double n) {
 		valeurCourante-=n;
 	}
-	
-	/**
-	 * Multiplie la valeur courante par un nombre
-	 * @param n le multiplicateur
-	 */
-	void multi(int n) {
-	    valeurCourante*=n;
-	}
-	
+		
 	/**
 	 * Elève la valeur courante au carré
 	 */
@@ -46,8 +38,9 @@ public class Calculatrice {
 	public static void main(String[] args) {
 		Calculatrice myCalc = new Calculatrice();
 		myCalc.ajoute(5);
+		System.out.println(myCalc.valeurCourante);
+
 		myCalc.soustrait(2);
-		myCalc.multi(3);
 		System.out.println(myCalc.valeurCourante);
 	}
 
