@@ -67,8 +67,14 @@ public class Calculatrice {
 		return (this.valeurCourante == calcu.valeurCourante);
 	}
 
-    public int compareTo(){
-        return 0;
+    public int compareTo(Calculatrice calcu){
+		if(this.valeurCourante > calcu.valeurCourante){
+			return 1;
+		} else if(this.valeurCourante < calcu.valeurCourante){
+			return -1;
+		} else {		
+			return 0;
+		}
 	}
 	
 	/**
@@ -87,7 +93,7 @@ public class Calculatrice {
 		myCalc2.soustrait(2);
 		System.out.println(myCalc2.toString());
 
-		System.out.println(myCalc.equals(myCalc2));
+		System.out.println(myCalc.compareTo(myCalc2) > 0);
 	}
 
 }

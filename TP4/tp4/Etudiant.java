@@ -63,9 +63,15 @@ public class Etudiant {
         return (this.matricule == e.matricule);
     }
 
-    public int compareTo(){
-        return 0;
-    }
+    /*public int compareTo(Etudiant e){
+		if(this.matricule > e.matricule){
+			return 1;
+		} else if (this.matricule < e.matricule){
+			return -1;
+		} else {
+			return 0;
+		}
+	}*/
 
 	/*
 	 * Méthode main qui crée un étudiant et initialise les variables d'instance au départ de la ligne de commande
