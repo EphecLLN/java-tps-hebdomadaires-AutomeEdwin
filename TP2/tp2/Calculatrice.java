@@ -34,6 +34,7 @@ public class Calculatrice {
 	void ajoute(double n) {
 		valeurCourante+=n;
 	}
+	
 	/**
 	 * Soustrait un nombre à la valeur courante
 	 * @param n le nombre à soustraire à la valeur courante de la calculatrice
@@ -41,6 +42,7 @@ public class Calculatrice {
 	void soustrait(double n) {
 		valeurCourante-=n;
 	}
+	
 	/**
 	 * Elève la valeur courante au carré
 	 */
@@ -62,17 +64,15 @@ public class Calculatrice {
 	 */
 	public static void main(String[] args) {
 		Calculatrice myCalc = new Calculatrice();
-		/*if(args.length == 0) {
-			myCalc = new Calculatrice();
-		} else {
-			myCalc = new Calculatrice(Integer.parseInt(args[0]));
-		}
-		
-		System.out.println(myCalc.valeurCourante);*/
+		Calculatrice myCalc2 = new Calculatrice(30);
 		
 		myCalc.ajoute(5);
 		myCalc.soustrait(2);
 		System.out.println(myCalc.toString());
+		
+		myCalc2.ajoute(5);
+		myCalc2.soustrait(2);
+		System.out.println(myCalc2.toString());
 	}
 
 }
