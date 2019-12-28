@@ -59,6 +59,14 @@ public class Etudiant {
 		return "L'étudiant " + this.matricule + " s'appelle " + this.nom + " " + this.prenom + " et est né le " + this.dateNaissance;
 	}
 
+	public boolean equals(Etudiant e){
+        return (this.matricule == e.matricule);
+    }
+
+    public int compareTo(){
+        return 0;
+    }
+
 	/*
 	 * Méthode main qui crée un étudiant et initialise les variables d'instance au départ de la ligne de commande
 	 * 

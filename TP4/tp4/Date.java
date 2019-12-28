@@ -52,6 +52,14 @@ public class Date {
 	public String toString(){
 		return this.jour + "/" + this.mois + "/" + this.annee;
 	}
+
+	public boolean equals(Date d){
+        return (this == d);
+    }
+
+    public int compareTo(){
+        return 0;
+    }
 	
 	/**
 	 * La m�thode main permet de tester la classe date en créant un objet 

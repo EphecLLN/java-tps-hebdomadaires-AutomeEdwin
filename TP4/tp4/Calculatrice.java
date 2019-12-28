@@ -67,6 +67,9 @@ public class Calculatrice {
 		return (this.valeurCourante == calcu.valeurCourante);
 	}
 
+    public int compareTo(){
+        return 0;
+	}
 	
 	/**
 	 * Méthode main permettant de lancer un test rapide de la classe calculatrice.
@@ -83,6 +86,8 @@ public class Calculatrice {
 		myCalc2.ajoute(5);
 		myCalc2.soustrait(2);
 		System.out.println(myCalc2.toString());
+
+		System.out.println(myCalc.equals(myCalc2));
 	}
 
 }

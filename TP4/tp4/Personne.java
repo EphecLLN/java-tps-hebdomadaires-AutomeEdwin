@@ -57,6 +57,14 @@ public class Personne {
     public String toString() {
 	    return "La personne s'appele : " + this.nom + " " + this.prenom;
     }
+
+    public boolean equals(Personne p){
+        return (this == p);
+    }
+
+    public int compareTo(){
+        return 0;
+    }
     
     /**
      * @param args
@@ -66,6 +74,7 @@ public class Personne {
 	    Personne pers2 = new Personne();
 	    System.out.println(pers.toString());
         System.out.println(pers2.toString());
-        System.out.println(pers.compareTo(pers2) > 0);
     }
+
+    
 }

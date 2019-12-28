@@ -61,6 +61,14 @@ public class IP {
         return this.o1 + "." + this.o2 +"." + this.o3 + "." + this.o4; 
     }
 
+    public boolean equals(IP ip){
+        return (this == ip);
+    }
+
+    public int compareTo(){
+        return 0;
+    }
+
 
     /**
      * @param args

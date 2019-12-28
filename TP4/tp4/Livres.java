@@ -51,6 +51,14 @@ public class Livres {
         return "titre: " + this.titre + "\nauteur: " + this.auteurNom + "\nisbn: " + this.isbn;
     }
 
+    public boolean equals(Livres l){
+        return (this.isbn == l.isbn);
+    }
+
+    public int compareTo(){
+        return 0;
+    }
+
     /**
      * @param args
      */
