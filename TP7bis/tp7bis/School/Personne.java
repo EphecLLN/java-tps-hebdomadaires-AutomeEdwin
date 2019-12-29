@@ -1,6 +1,6 @@
 package tp7bis.School;
 
-import tp6.Affichable;
+import tp7bis.*;
 
 import java.time.LocalDate;
 import java.time.Period;
