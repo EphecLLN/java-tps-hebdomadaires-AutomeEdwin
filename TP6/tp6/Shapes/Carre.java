@@ -1,4 +1,4 @@
-package tp6;
+package tp6.Shapes;
 
 public class Carre extends Shape {
     int longueur;
@@ -16,6 +16,10 @@ public class Carre extends Shape {
     @Override
     public double perimetre() {
         return longueur*4;
+    }
+
+    public void agrandit(int facteur){
+        this.longueur *= facteur;
     }
 
 }

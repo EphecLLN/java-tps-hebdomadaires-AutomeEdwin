@@ -1,4 +1,4 @@
-package tp6;
+package tp6.Shapes;
 
 public class Point extends Shape {
 
@@ -13,4 +13,8 @@ public class Point extends Shape {
     public double perimetre(){
         return 0;
     }
+
+    @Override
+    public void agrandit(int facteur) {}
+
 }
